@@ -20,3 +20,6 @@ Route::get('/','Items@index');
 //Route::delete('delete/{id}','kitobController@delete');
 
 Route::resource('item','Items');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
